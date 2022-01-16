@@ -1,22 +1,24 @@
 CREATE TABLE PUBLIC."REALESTATE"(Id int,
 								 Municipality VARCHAR,
 								 Community VARCHAR,
-								 List_Price int,
-								 Sold_Price int,
+								 List_Price money ,
+								 Sold_Price money,
 								 Type VARCHAR,
 								 Style VARCHAR,
-								 BR int,
-								 ER int,
-								 WR int,
+								 BR numeric,
+								 ER numeric,
+								 WR numeric,
 								 FR VARCHAR,
-								 Kitchen int,
+								 Kitchen numeric,
 								 Gar_Type VARCHAR,
 								 AC VARCHAR,
 								 Heat VARCHAR,
 								 Contract_Date DATE,
 								 MLS_ID VARCHAR,
-								 Address VARCHAR ,
-								 Lat INT,
-								 Lng INT  )
+								 Address VARCHAR,
+								 Lat numeric,
+								 Lng numeric  )
 								 
-								 
+Select * from public."REALESTATE";
+
+							 
