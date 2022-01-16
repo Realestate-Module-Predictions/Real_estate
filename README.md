@@ -11,7 +11,7 @@ We thought it is intresting to use the tools and knowlwdge given to us during th
 
 ✓ Description of their source of data
 ---
-The Data Source used is a CSV file including all the listings sold abd still listed since (Jan 2020 till 11th Jan 2022)
+The Data Source used is a CSV file including all the listings sold and still listed since (Jan 2020 till 11th Jan 2022)
 
 ✓ Questions they hope to answer with the data
 ---
