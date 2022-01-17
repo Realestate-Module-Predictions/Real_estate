@@ -45,6 +45,7 @@ Supporting Snaps the mock-code:
 ---
 Data Sample:
 
+<img width="1101" alt="Screenshot 2022-01-16 at 20 29 09" src="https://user-images.githubusercontent.com/89428205/149687283-c1ce9a2e-9b22-46a3-83c5-16a98c7707dc.png">
 
 
 Visualising House Prices:
