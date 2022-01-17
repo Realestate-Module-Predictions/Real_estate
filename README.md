@@ -3,7 +3,7 @@
 
 ✓ Selected topic
 ---
-Real estate predictions in Toronto.
+Real estate selling price predictions in Toronto.
 
 ✓ Reason why this topic
 ---
@@ -43,7 +43,7 @@ SQL,
 Postgres.
 
 
-Supporting Snaps the mock-code:
+Supporting Snaps of the mock-code:
 ---
 Data Sample:
 
