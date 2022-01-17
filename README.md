@@ -38,7 +38,7 @@ AWS,
 
 SQL,
 
-Possgress.
+Postgres.
 
 
 Supporting Snaps the mock-code:
