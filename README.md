@@ -18,17 +18,30 @@ Originally a google sheet, which we cleaned, edited, downloaded as a csv file, a
 ---
 how much will the currenltly listed units be sold for in the next 6 months to a year.
 
-Tools
+Communication tool:
 ---
-pandas, 
+Zoom,
+
+Slack
+
+Tools:
+---
+pandas,
+
 tensorflow, 
+
 sklearn,
+
 Python,
+
 AWS,
+
 SQL,
+
 Possgress.
 
-Supporting Snaps the mock-code
+
+Supporting Snaps the mock-code:
 ---
 Data Sample:
 
