@@ -16,7 +16,7 @@ Originally a google sheet, which we cleaned, edited, downloaded as a csv file, a
 
 ✓ Questions they hope to answer with the data
 ---
-how much will the currenltly listed units be sold for in the next 6 months to a year.
+how much will the actively listed units be sold for in the next 6 months to a year.
 
 Communication tool:
 ---
