@@ -15,6 +15,8 @@ We collectively agreed on using the tools and knowledge given to us during this 
 - Originally a google sheet, which we cleaned, edited, downloaded as a csv file.
 - It has been imported into Postgres PGAdmin using AWS. It has also been connected to Jupyter files.
 - Latitudes and Longitudes of listings addresses was also added to the data. 
+- The data consists of number of features such as Location, Rooms (Bed,wash and extra), Municipality, Garage Type, Heating etc.
+
 
 ✓ Questions they hope to answer with the data
 ---
