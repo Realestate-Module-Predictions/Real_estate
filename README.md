@@ -7,18 +7,20 @@ Real estate predictions in Toronto.
 
 ✓ Reason why this topic
 ---
-We collectively agreed on thinking that it would be intresting to use the tools and knowlwdge given to us during this course to play with data in order to predict how much the currently listed unsold units, would be sold for in Toronto. 
+We collectively agreed on using the tools and knowledge given to us during this course to manipulate, store, perform ETL and analysis on data. We will train a machine learning on prices of sold inactive listings to predict how much the currently listed unsold units would be sold for in Toronto. 
 
 ✓ Description of their source of data
 ---
-The Data Source used is a CSV file including all the listings sold and still listed since (1st Jan 2020 till 10th Jan 2022)
-Originally a google sheet, which we cleaned, edited, downloaded as a csv file, and now it is imported to Posgress PGAdmin, using AWS.
+- The Data Source used is a CSV file including all the listings sold and still listed since (1st Jan 2020 till 10th Jan 2022).
+- Originally a google sheet, which we cleaned, edited, downloaded as a csv file.
+- It has been imported into Postgres PGAdmin using AWS. It has also been connected to Jupyter files.
+- Latitudes and Longitudes of listings addresses was also added to the data. 
 
 ✓ Questions they hope to answer with the data
 ---
-how much will the actively listed units be sold for in the next 6 months to a year.
+How much will the active listed real estate units in Toronto be sold for?
 
-Communication tool:
+Communication Tools:
 ---
 Zoom,
 
