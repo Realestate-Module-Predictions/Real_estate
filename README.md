@@ -11,7 +11,8 @@ We collectively agreed on thinking that it would be intresting to use the tools 
 
 ✓ Description of their source of data
 ---
-The Data Source used is a CSV file including all the listings sold and still listed since (Jan 2020 till 11th Jan 2022)
+The Data Source used is a CSV file including all the listings sold and still listed since (1st Jan 2020 till 10th Jan 2022)
+Originally a google sheet, which we cleaned, edited, downloaded as a csv file, and now it is imported to Posgress PGAdmin, using AWS.
 
 ✓ Questions they hope to answer with the data
 ---
