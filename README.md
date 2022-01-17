@@ -20,18 +20,19 @@ how much will the currenltly listed units be sold for in the next 6 months to a 
 
 Tools
 ---
-pandas 
-sklearn 
-tensorflow 
-sklearn
-numpy
-SQL
+pandas, 
+tensorflow, 
+sklearn,
+Python,
+AWS,
+SQL,
+Possgress.
 
 Supporting Snaps the mock-code
 ---
 Data Sample:
 
-<img width="1114" alt="Screen Shot 2022-01-16 at 3 58 50 PM" src="https://user-images.githubusercontent.com/89428205/149681753-30448891-3577-455e-ab9c-e4f2cb1e4193.png">
+
 
 Visualising House Prices:
 
