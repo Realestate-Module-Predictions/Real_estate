@@ -55,3 +55,11 @@ Data Sample:
 Visualising House Prices:
 
 <img width="758" alt="Screen Shot 2022-01-16 at 4 00 11 PM" src="https://user-images.githubusercontent.com/89428205/149681899-6b2e0ed6-f18f-4f65-a9d8-a6be4d4901e8.png">
+
+## Segement 2
+
+### Presentation
+
+### Database
+
+### Machine Learning Model 
