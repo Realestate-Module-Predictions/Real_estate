@@ -62,4 +62,7 @@ Visualising House Prices:
 
 ### Database
 
-### Machine Learning Model 
+### Machine Learning Model
+#### Cleaning Dataset
+#### Exploratory Analysis and Visualisations
+#### Machine Learning Model
