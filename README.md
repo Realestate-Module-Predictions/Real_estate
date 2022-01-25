@@ -59,7 +59,9 @@ Visualising House Prices:
 ## Segement 2
 
 ### Presentation
+[Google Slides Link](https://docs.google.com/presentation/d/1XaxNnde6NV_13rH7aMo0w9cdDHXTRehXroma-MxGU5o/edit?usp=sharing)
 
+[Tableau Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story)
 ### Database
 
 ### Machine Learning Model
