@@ -64,7 +64,6 @@ Visualising House Prices:
 [Tableau Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story)
 ### Database
 
-### Machine Learning Model
 #### Cleaning Dataset
  - Collected the Inactive listing and active listing files.
  - Converted all the null values to "0" and dropped all the unwanted columns.
@@ -79,32 +78,53 @@ Visualising House Prices:
 
 
 
-#### Machine Learning Model
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Machine Learning Model 
+
+Reading Data Base from the Cloud:
 
 ![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
 
+Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features):
 
 ![Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features)](https://user-images.githubusercontent.com/89428205/151253052-e8c1e709-e51e-4e53-950d-8e008d076cfe.png)
 
+Final DF after processing (Fit and transform):
 
 ![Final DF after processing (Fit and transform)](https://user-images.githubusercontent.com/89428205/151253279-8e11215c-5d99-41f8-939d-bf86c1d0fada.png)
 
+Linear Regression Model:
 
 ![Linear regression](https://user-images.githubusercontent.com/89428205/151253343-7cd9c667-6517-47de-977d-9950e85e23ee.png)
 
-
-![Add model predicted values to original dataframe](https://user-images.githubusercontent.com/89428205/151253386-b11b1f09-80a6-4948-9a1b-20c4828e934c.png)
-
-
-![Predictions added](https://user-images.githubusercontent.com/89428205/151253454-9206c758-5426-422e-bdaa-f32f61ee8057.png)
-
+Importing Active Listings:
 
 ![Importing the Active listings](https://user-images.githubusercontent.com/89428205/151253511-b01f9fb6-2bc7-4fcb-98bd-6ac7720d8971.png)
 
+Adding the selling price predictions to the active listings:
 
 ![Adding the selling price predictions to the active listings](https://user-images.githubusercontent.com/89428205/151253817-ddea6fd4-7e0e-4647-a19b-cca22a825fa3.png)
 
+Exporting the predictions of the active listings to a csv file:
 
 ![Exporting the predictions of the active listings to a csv file](https://user-images.githubusercontent.com/89428205/151253840-529a0fd0-50f4-48c5-a23f-95281afeb5d0.png)
 
