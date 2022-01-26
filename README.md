@@ -74,59 +74,60 @@ Visualising House Prices:
  - Cleaned data is saved in the database
  
 
-#### Exploratory Analysis and Visualisations
+## Exploratory Analysis and Visualisations
+
+#### Importing the original dataset csv
+
+![Im porting the original dataset csv](https://user-images.githubusercontent.com/89428205/151258548-2232964d-320a-4f22-bd3e-73a9c4e785e2.png)
+
+#### Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)
+
+![Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)](https://user-images.githubusercontent.com/89428205/151258586-46a46fd6-25fe-4b85-8519-c8099fe3f103.png)
+
+#### Counting the style and types of each residence
+
+![Counting the style and types of each residence](https://user-images.githubusercontent.com/89428205/151258639-d1de5e88-629f-4820-ad15-cf64db0098ef.png)
 
 
+#### Plotting the Correlation between price and room types in the residence
+
+![Plotting the Correlation between price and room types in the residence](https://user-images.githubusercontent.com/89428205/151258668-c1462879-940a-427d-8cc1-762c759a1110.png)
 
 
+#### Plotting the price VS Feature
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Plotting the price VS Feature](https://user-images.githubusercontent.com/89428205/151258695-fc97d7ed-beea-4ec9-84bb-4c18c88b3237.png)
 
 
 ## Machine Learning Model: 
 
 
 #### Reading Data Base from the Cloud:
---
+
 ![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
 
 #### Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features):
---
+
 ![Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features)](https://user-images.githubusercontent.com/89428205/151253052-e8c1e709-e51e-4e53-950d-8e008d076cfe.png)
 
 #### Final DF after processing (Fit and transform):
---
+
 ![Final DF after processing (Fit and transform)](https://user-images.githubusercontent.com/89428205/151253279-8e11215c-5d99-41f8-939d-bf86c1d0fada.png)
 
 #### Linear Regression Model:
---
+
 ![Linear regression](https://user-images.githubusercontent.com/89428205/151253343-7cd9c667-6517-47de-977d-9950e85e23ee.png)
 
 #### Importing Active Listings:
---
+
 ![Importing the Active listings](https://user-images.githubusercontent.com/89428205/151253511-b01f9fb6-2bc7-4fcb-98bd-6ac7720d8971.png)
 
 #### Adding the selling price predictions to the active listings:
---
+
 ![Adding the selling price predictions to the active listings](https://user-images.githubusercontent.com/89428205/151253817-ddea6fd4-7e0e-4647-a19b-cca22a825fa3.png)
 
 #### Exporting the predictions of the active listings to a csv file:
---
+
 ![Exporting the predictions of the active listings to a csv file](https://user-images.githubusercontent.com/89428205/151253840-529a0fd0-50f4-48c5-a23f-95281afeb5d0.png)
 
 
