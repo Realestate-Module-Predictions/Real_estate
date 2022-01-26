@@ -66,5 +66,17 @@ Visualising House Prices:
 
 ### Machine Learning Model
 #### Cleaning Dataset
+ - Collected the Inactive listing and active listing files.
+ - Converted all the null values to "0" and dropped all the unwanted columns.
+ - Renamed the columns for better understanding and set index column to the dataframe. 
+ - Converted the necessary column data type. 
+ - From the street addresses found the Latitude and Longitude and added it to the merged it to main dataframe 
+ - After making sure there are no null values and removing any null values in the dataframe. File saved as  " "Inactive_Listings_Final.csv"
+ - Cleaned data is saved in the database
+ 
+
 #### Exploratory Analysis and Visualisations
+
+
+
 #### Machine Learning Model
