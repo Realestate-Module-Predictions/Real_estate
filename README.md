@@ -58,11 +58,11 @@ Visualising House Prices:
 
 ## Segement 2
 
-### Presentation
+#### Presentation:
 [Google Slides Link](https://docs.google.com/presentation/d/1XaxNnde6NV_13rH7aMo0w9cdDHXTRehXroma-MxGU5o/edit?usp=sharing)
 
 [Tableau Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story)
-### Database
+## Database
 
 #### Cleaning Dataset
  - Collected the Inactive listing and active listing files.
@@ -74,7 +74,7 @@ Visualising House Prices:
  - Cleaned data is saved in the database
  
 
-## Exploratory Analysis and Visualisations
+## Exploratory Analysis and Visualisations:
 
 #### Importing the original dataset csv
 
