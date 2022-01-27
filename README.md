@@ -117,6 +117,15 @@ Visualising House Prices:
 ![Final DF after processing (Fit and transform)](https://user-images.githubusercontent.com/89428205/151253279-8e11215c-5d99-41f8-939d-bf86c1d0fada.png)
 
 ##### Linear Regression Model:
+✓ Explanation of model choice, including limitations and benefits:
+
+will take in its fit method arrays X, y and will store the coefficients "w" of the linear model in its coef_ member
+The coefficient estimates for Ordinary Least Squares rely on the independence of the features. When features are correlated and the columns of the design matrix X have an approximately linear dependence, the design matrix becomes close to singular and as a result, the least-squares estimate becomes highly sensitive to random errors in the observed target, producing a large variance. This situation of multicollinearity can arise, for example, when data are collected without an experimental design.
+
+#####Reason of choice:
+Choosing a model with those features is exactly what we need to make our predictions.
+We have tried different models on a smaller scale incl... Neural Networks, Decision Trees, Random Forests, and other forms of regresions like Logistic regression.
+the reasons of disregarding them varies, for example: in the neural network model it returns a very low accuracy. Decission trees, kills the kernel. 
 
 ![Linear regression](https://user-images.githubusercontent.com/89428205/151253343-7cd9c667-6517-47de-977d-9950e85e23ee.png)
 
