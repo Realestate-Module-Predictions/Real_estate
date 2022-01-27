@@ -84,26 +84,26 @@ Visualising House Prices:
 <img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
 
 
-##### Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, kitchen)
+##### Room Type vs Count (Bedroom, Extra Room, Washroom, Kitchen):
 
 ![Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)](https://user-images.githubusercontent.com/89428205/151258586-46a46fd6-25fe-4b85-8519-c8099fe3f103.png)
 
-##### Amenities vs Count ( AC, Heat, garage Type, & family room ) 
+##### Amenities vs Count ( AC, Heat, Garage Type, & Family Room ):
 
 <img width="1084" alt="Screenshot 2022-01-27 at 14 43 25" src="https://user-images.githubusercontent.com/89428205/151432312-a56beedd-1d84-4fa5-8743-f7fe5617b0e8.png">
 
 
-##### Counting the style and types of each residence
+##### Count VS style and types:
 
 ![Counting the style and types of each residence](https://user-images.githubusercontent.com/89428205/151258639-d1de5e88-629f-4820-ad15-cf64db0098ef.png)
 
 
-##### Plotting the Correlation between price and room types in the residence
+##### Plotting the Correlation between price and room types in the residence:
 
 ![Plotting the Correlation between price and room types in the residence](https://user-images.githubusercontent.com/89428205/151258668-c1462879-940a-427d-8cc1-762c759a1110.png)
 
 
-##### Plotting the price VS Feature
+##### Plotting the price VS Feature:
 
 ![Plotting the price VS Feature](https://user-images.githubusercontent.com/89428205/151258695-fc97d7ed-beea-4ec9-84bb-4c18c88b3237.png)
 
@@ -123,7 +123,7 @@ limitations and benefits
 
 ![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
 
-##### Plotting Sold price density, as well as sold price Boxplot
+##### Plotting Sold price density, as well as sold price Boxplot:
 
 <img width="713" alt="Screenshot 2022-01-27 at 14 40 59" src="https://user-images.githubusercontent.com/89428205/151431934-ac1d74bd-fbcd-414f-9082-4bb835b0682c.png">
 
