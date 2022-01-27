@@ -175,40 +175,85 @@ Preprocessing
 For preprocessing for this machine learning model, we converted the date time object of the contract date column to numeric so it can be scaled. Additionally we dropped MLS ID and Address columns as in terms of features they do not play a role. The address column has already been converted to numerical latitudes and longitudes while MLS ID is not important.
 
 ##### Description of preliminary feature engineering, preliminary feature selection and decision-making process
+
+We read in the cleaned dataset into Machine_Learning.ipynb. The features we start with are: 
+
+- municipality	
+- community	
+- list_price	
+- sold_price	
+- type	
+- style	
+- br	
+- er	
+- wr	
+- fr	
+- kitchen	
+- gar_type	
+- ac	
+- heat	
+- contract_date	
+- mls_id	
+- address	
+- lat	
+- lng
+
+We convert the contract_date column from a datetime object to numeric data types for scaling for the model. 
+
+The Address column has already been converted into numeric latitudes and longitude values (features) for each listing. We drop Address column because it would act as a categorical variable with too many non similar elements. This would only make the encoding too complex. The mls_id column serves no purpose so it is also dropped. 
+
+The features (X) remaining are chosen as they carry significant effect on the property value and selling prices (y). Location and Amenities are of high importance to customers when they are choosing to buy a house. Date of listing gives us an idea of when they were put on the market and how much they were evenetually sold for.
+
+The following code shows that:
+
+<img width="763" alt="Screenshot 2022-01-27 at 17 18 06" src="https://user-images.githubusercontent.com/87828174/151452969-e2834f1b-5052-466c-b87b-5cf98fdbbe85.png">
+
+Afterwards we seperate the categorical variables and encode them using Ordinal Encoding from sklearn. We merge the encoded dataframe into the original one and drop unecessary columns.
+
+<img width="663" alt="Screenshot 2022-01-27 at 17 33 47" src="https://user-images.githubusercontent.com/87828174/151454634-2ca9fc3b-72e2-482c-b614-26d7443e7255.png">
+
 ##### Description of how data was split into training and testing sets
+
+The sold price is the value we want to predict in active listings (unsold houses). Our aim is to train the model on inactive listings (sold houses) and then predict the selling price on currently listed (active listings) houses based on these features. As we want to predict selling price we set that as y and drop it in the dataframe whose remaining values we assign to X. We use train_test_split to split the model in a training and testing set. Finally we create a StandardScaler() instance to scale x values to avoid extreme values effecting final predictions. 
+
+<img width="591" alt="Screenshot 2022-01-27 at 17 40 02" src="https://user-images.githubusercontent.com/87828174/151455300-c073792e-608f-4d4d-8fd2-23b9eda5f9d2.png">
+
 ##### Explanation of model choice, including limitations and benefits
 
+As we want to make predictions on a continuous variables, classification models are not useful. We tried different regressor models. The Neural Network model yielded a lower accuracy score of 86%. Logistic regression did not work and Decision Trees would kill the kernel and now allow computation. For our continuous variable features and the type of predictions we wanted, the linear regression model worked the best. We trained the model on the training scaled data and predict on the X_test_scaled or the scaled test data. The errors are printed and we get a variance score of 97 %.
 
-##### Final DF after processing (Fit and transform):
+<img width="789" alt="Screenshot 2022-01-27 at 17 53 45" src="https://user-images.githubusercontent.com/87828174/151456685-39c2a7f6-5c7b-498b-a354-609107cf2754.png">
 
-![Final DF after processing (Fit and transform)](https://user-images.githubusercontent.com/89428205/151253279-8e11215c-5d99-41f8-939d-bf86c1d0fada.png)
+Scores:
 
-##### Linear Regression Model:
-✓ Explanation of model choice, including limitations and benefits:
+<img width="180" alt="Screenshot 2022-01-27 at 17 56 29" src="https://user-images.githubusercontent.com/87828174/151456963-a26c6550-c1c5-4fef-8c04-efa084225cb9.png">
 
-will take in its fit method arrays X, y and will store the coefficients "w" of the linear model in its coef_ member
-The coefficient estimates for Ordinary Least Squares rely on the independence of the features. When features are correlated and the columns of the design matrix X have an approximately linear dependence, the design matrix becomes close to singular and as a result, the least-squares estimate becomes highly sensitive to random errors in the observed target, producing a large variance. This situation of multicollinearity can arise, for example, when data are collected without an experimental design.
+##### Predictions on entire dataset
 
-##### Reason of choice:
+Scaler instance created again and scakes the entire X features dataframe instead of test and train sets individually. Predictions are made on this scaled X dataframe. R^2 score of these predicted values to actual values is high at 97 % as we have seen before.
 
-Choosing a model with those features is exactly what we need to make our predictions.
-We have tried different models on a smaller scale incl... Neural Networks, Decision Trees, Random Forests, and other forms of regresions like Logistic regression.
-the reasons of disregarding them varies, for example: in the neural network model it returns a very low accuracy. Decission trees, kills the kernel. 
 
-![Linear regression](https://user-images.githubusercontent.com/89428205/151253343-7cd9c667-6517-47de-977d-9950e85e23ee.png)
+<img width="466" alt="Screenshot 2022-01-27 at 17 57 30" src="https://user-images.githubusercontent.com/87828174/151457086-213385ae-5113-4f46-990e-4ab9edbf96c7.png">
 
-##### Importing Active Listings:
+These predicted values are added as a seperate column to the original dataset of inactive house listings. This new dataframe is exported to a csv called Inactive_Predictions.csv.
 
-![Importing the Active listings](https://user-images.githubusercontent.com/89428205/151253511-b01f9fb6-2bc7-4fcb-98bd-6ac7720d8971.png)
+<img width="1098" alt="Screenshot 2022-01-27 at 18 05 28" src="https://user-images.githubusercontent.com/87828174/151457976-c5d925f1-1126-4c63-9a29-70df203c40a0.png">
 
-##### Adding the selling price predictions to the active listings:
+##### Importing and cleaning Active Listings
 
-![Adding the selling price predictions to the active listings](https://user-images.githubusercontent.com/89428205/151253817-ddea6fd4-7e0e-4647-a19b-cca22a825fa3.png)
+Since the aim of the model is to predict selling prices on currently unsold house listings, we can now use the trained model as before on the active_listings_raw dataset. We repeat the same process of cleaning as mentioned before. Latitudes and Longitudes are also added for this dataset and required columns are dropped. Datatypes are also converted and NaNs are dropped. This final dataframe before machine learning processing is names merge2_df as seen below:
 
-##### Exporting the predictions of the active listings to a csv file:
+<img width="1104" alt="Screenshot 2022-01-27 at 18 10 03" src="https://user-images.githubusercontent.com/87828174/151458491-012bf6fb-daa6-48e6-b09e-dddda35c86de.png">
 
-![Exporting the predictions of the active listings to a csv file](https://user-images.githubusercontent.com/89428205/151253840-529a0fd0-50f4-48c5-a23f-95281afeb5d0.png)
+##### Predictions on the Active Listings
 
+The same process of preprocessing is repeated. Categorical encoding and scaling is performed. The model is used on the this dataset. We do not need to seperate dataset into x and y since these are active listings (Unsold houses) they do not have a selling price (y). Therefore the entire dataset values are features or X. 
+
+<img width="350" alt="Screenshot 2022-01-27 at 18 17 17" src="https://user-images.githubusercontent.com/87828174/151459203-27797901-c0cd-48ed-96f8-7149298bc1c3.png">
+
+These predicted values are added to the original dataframe merge2_df in a different column and exported as a csv file. 
+
+<img width="1101" alt="Screenshot 2022-01-27 at 18 22 15" src="https://user-images.githubusercontent.com/87828174/151459740-7327d486-835a-49e4-b62a-108f129f3718.png">
 
 **Database**
 <p>The purpose of this database is to format, combine and clean sets of data.<p>
