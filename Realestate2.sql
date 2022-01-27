@@ -3,10 +3,18 @@ Select * from public."REALESTATE";
 Select * from styleAndPrice;
 
 
-SELECT COUNT(style),
-	municipality
-INTO MunicipalityStyleCount
+SELECT municipality, style , COUNT(style)
+INTO Stylecount
+FROM "REALESTATE"
+GROUP BY municipality, style;
+
+
+SELECT municipality, COUNT(style)
+INTO Stylecount
 FROM "REALESTATE"
 GROUP BY municipality;
 
+
+drop table MunicipalityStyleC cascade;
 Select * from MunicipalityStyleCount;
+Select * from Stylecount;
