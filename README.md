@@ -248,7 +248,7 @@ Scores:
 
 ##### Predictions on entire dataset
 
-Scaler instance created again and scakes the entire X features dataframe instead of test and train sets individually. Predictions are made on this scaled X dataframe. R^2 score of these predicted values to actual values is high at 97 % as we have seen before.
+Scaler instance created again and scales the entire X features dataframe instead of test and train sets individually. Predictions are made on this scaled X dataframe. R^2 score of these predicted values to actual values is high at 97 % as we have seen before.
 
 
 <img width="466" alt="Screenshot 2022-01-27 at 17 57 30" src="https://user-images.githubusercontent.com/87828174/151457086-213385ae-5113-4f46-990e-4ab9edbf96c7.png">
@@ -269,7 +269,7 @@ The same process of preprocessing is repeated. Categorical encoding and scaling 
 
 <img width="350" alt="Screenshot 2022-01-27 at 18 17 17" src="https://user-images.githubusercontent.com/87828174/151459203-27797901-c0cd-48ed-96f8-7149298bc1c3.png">
 
-These predicted values are added to the original dataframe merge2_df in a different column and exported as a csv file. 
+These predicted values are added to the original dataframe merge2_df in a different column and exported as a csv file. There are 530 listings.
 
 <img width="1101" alt="Screenshot 2022-01-27 at 18 22 15" src="https://user-images.githubusercontent.com/87828174/151459740-7327d486-835a-49e4-b62a-108f129f3718.png">
 
