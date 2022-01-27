@@ -149,14 +149,10 @@ Two dataframes were created to see average cost and amenities for different styl
 
 #### Machine Learning Model: 
 
-✓ Description of preliminary data preprocessing
-✓ Description of preliminary feature engineering
-and preliminary feature selection, including their
-decision-making process
-✓ Description of how data was split into training
-and testing sets
-✓ Explanation of model choice, including
-limitations and benefits
+##### Description of preliminary data preprocessing
+##### Description of preliminary feature engineering, preliminary feature selection and decision-making process
+##### Description of how data was split into training and testing sets
+##### Explanation of model choice, including limitations and benefits
 
 ##### Reading Data Base from SQL Database:
 
