@@ -84,9 +84,14 @@ Visualising House Prices:
 <img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
 
 
-##### Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)
+##### Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, kitchen)
 
 ![Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)](https://user-images.githubusercontent.com/89428205/151258586-46a46fd6-25fe-4b85-8519-c8099fe3f103.png)
+
+##### Ammenities vs Count
+
+<img width="1084" alt="Screenshot 2022-01-27 at 14 43 25" src="https://user-images.githubusercontent.com/89428205/151432312-a56beedd-1d84-4fa5-8743-f7fe5617b0e8.png">
+
 
 ##### Counting the style and types of each residence
 
