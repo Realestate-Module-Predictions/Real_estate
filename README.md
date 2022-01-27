@@ -75,7 +75,9 @@ Visualising House Prices:
  - After making sure there are no null values and removing any null values in the dataframe. File saved as  " "Inactive_Listings_Final.csv"
  - Cleaned data is saved in the database
  
-
+✓ Description of preliminary data preprocessing
+✓ Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
+✓ Description of how data was split into training and testing sets
 #### Exploratory Analysis and Visualisations:
 
 ##### Importing the original dataset csv
