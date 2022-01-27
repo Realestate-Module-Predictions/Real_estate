@@ -76,13 +76,6 @@ Visualising House Prices:
  - From the street addresses found the Latitude and Longitude and added it to the merged it to main dataframe 
  - After making sure there are no null values and removing any null values in the dataframe. File saved as  " "Inactive_Listings_Final.csv"
  - Cleaned data is saved in the database
- 
- 
-✓ Description of preliminary data preprocessing
-
-✓ Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
-
-✓ Description of how data was split into training and testing sets
 
 #### Exploratory Analysis and Visualisations:
 
@@ -111,6 +104,14 @@ Visualising House Prices:
 
 #### Machine Learning Model: 
 
+✓ Description of preliminary data preprocessing
+✓ Description of preliminary feature engineering
+and preliminary feature selection, including their
+decision-making process
+✓ Description of how data was split into training
+and testing sets
+✓ Explanation of model choice, including
+limitations and benefits
 
 ##### Reading Data Base from the Cloud:
 
