@@ -79,9 +79,10 @@ Visualising House Prices:
 
 #### Exploratory Analysis and Visualisations:
 
-##### Importing the original dataset csv
+##### Importing the original dataset from the cloud
 
-![Im porting the original dataset csv](https://user-images.githubusercontent.com/89428205/151258548-2232964d-320a-4f22-bd3e-73a9c4e785e2.png)
+<img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
+
 
 ##### Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)
 
@@ -116,6 +117,11 @@ limitations and benefits
 ##### Reading Data Base from the Cloud:
 
 ![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
+
+##### Plotting Sold price density, as well as sold price Boxplot
+
+<img width="713" alt="Screenshot 2022-01-27 at 14 40 59" src="https://user-images.githubusercontent.com/89428205/151431934-ac1d74bd-fbcd-414f-9082-4bb835b0682c.png">
+
 
 ##### Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features):
 
