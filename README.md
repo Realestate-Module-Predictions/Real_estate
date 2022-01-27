@@ -103,7 +103,7 @@ Visualising House Prices:
 ![Plotting the Correlation between price and room types in the residence](https://user-images.githubusercontent.com/89428205/151258668-c1462879-940a-427d-8cc1-762c759a1110.png)
 
 
-##### Plotting the price VS Feature:
+##### Sold Price According To Contract Date:
 
 ![Plotting the price VS Feature](https://user-images.githubusercontent.com/89428205/151258695-fc97d7ed-beea-4ec9-84bb-4c18c88b3237.png)
 
