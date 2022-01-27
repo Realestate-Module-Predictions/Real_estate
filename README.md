@@ -210,7 +210,7 @@ the reasons of disregarding them varies, for example: in the neural network mode
 ![Exporting the predictions of the active listings to a csv file](https://user-images.githubusercontent.com/89428205/151253840-529a0fd0-50f4-48c5-a23f-95281afeb5d0.png)
 
 
-##Database##
+**Database**
 <p>The purpose of this database is to format, combine and clean sets of data.<p>
 <p>Connection between the database and the model: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png<p>
 <p>-Create a table with columns to import the raw data from the CSV. This column is called REALESTATE.<p>
