@@ -210,7 +210,18 @@ the reasons of disregarding them varies, for example: in the neural network mode
 ![Exporting the predictions of the active listings to a csv file](https://user-images.githubusercontent.com/89428205/151253840-529a0fd0-50f4-48c5-a23f-95281afeb5d0.png)
 
 
-
-
-
-
+##Database##
+<p>The purpose of this database is to format, combine and clean sets of data.<p>
+<p>Connection between the database and the model: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png<p>
+<p>-Create a table with columns to import the raw data from the CSV. This column is called REALESTATE.<p>
+<p>-Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
+<p>-Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
+<p>-Create a table from the REALESTATE table to show which properties sold for under their listing price. Named this table UnderAsking.<p>
+<p>-Create a table that calculates the avg sold price and groups it by community. This will show us the average sold price for each community.<p>
+<p>-Create a table that calculates the avg sold price and groups it by municipality. This will show us the average sold price for each municipality.<p>
+<p>-Use Inner Join so that the Community column is also included in the table that displays the average sold price for each municipality.<p>
+<p>-Created a Table to import the data from the Active_Predictions file. This file includes the predicted Sold prices on Active listings.<p>
+<p>-Created a Table to import the data from the Inactive_Predictions file. This file includes the predicted Sold prices on Inactive listings.<p>
+<p>Join: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png <p>
+<p>Average Sold Price for each Toronto community: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Communities_SoldPrice.png<p>
+<p>Average Sold Price for each Toronto Municipality: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Municipalities_SoldPrice.png<p>
