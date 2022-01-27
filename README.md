@@ -88,12 +88,12 @@ Visualising House Prices:
 
 ![Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)](https://user-images.githubusercontent.com/89428205/151258586-46a46fd6-25fe-4b85-8519-c8099fe3f103.png)
 
-##### Amenities vs Count ( AC, Heat, Garage Type, & Family Room ):
+##### Amenities vs Count (AC, Heat, Garage Type, & Family Room):
 
 <img width="1084" alt="Screenshot 2022-01-27 at 14 43 25" src="https://user-images.githubusercontent.com/89428205/151432312-a56beedd-1d84-4fa5-8743-f7fe5617b0e8.png">
 
 
-##### Count VS style and types:
+##### Count vs Style & Types:
 
 ![Counting the style and types of each residence](https://user-images.githubusercontent.com/89428205/151258639-d1de5e88-629f-4820-ad15-cf64db0098ef.png)
 
@@ -107,6 +107,45 @@ Visualising House Prices:
 
 ![Plotting the price VS Feature](https://user-images.githubusercontent.com/89428205/151258695-fc97d7ed-beea-4ec9-84bb-4c18c88b3237.png)
 
+##### Tableau Analysis
+
+Additional Analysis was done on Tableau. Click on the following link:
+
+[Tableau Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story)
+
+##### Summary Statistics
+
+The following screenshots are additional analysis we performed on features for sold houses (inactive listings):
+
+<img width="364" alt="Screenshot 2022-01-27 at 14 56 42" src="https://user-images.githubusercontent.com/87828174/151434069-1f63eb68-3244-4413-96c2-52c232547e64.png">
+
+<img width="366" alt="Screenshot 2022-01-27 at 14 57 28" src="https://user-images.githubusercontent.com/87828174/151434160-35abbb2f-cb1a-4a49-a55e-632955ce89cf.png">
+
+<img width="366" alt="Screenshot 2022-01-27 at 14 57 43" src="https://user-images.githubusercontent.com/87828174/151434190-bd0cf0b3-32f7-402d-9e9e-7616bfeda7ef.png">
+
+<img width="364" alt="Screenshot 2022-01-27 at 14 57 55" src="https://user-images.githubusercontent.com/87828174/151434215-ffd2e43a-2bea-48db-a79e-0b48370c246c.png">
+
+<img width="405" alt="Screenshot 2022-01-27 at 14 58 06" src="https://user-images.githubusercontent.com/87828174/151434240-17d4cd3f-4fcd-4a13-9f15-47321c6aa740.png">
+
+<img width="415" alt="Screenshot 2022-01-27 at 14 58 22" src="https://user-images.githubusercontent.com/87828174/151434282-bc74583f-5c70-45f0-87e0-b3f3e1cf8529.png">
+
+<img width="378" alt="Screenshot 2022-01-27 at 14 58 34" src="https://user-images.githubusercontent.com/87828174/151434312-1d62529a-01f4-4a37-9cf7-92b820ccc76d.png">
+
+<img width="363" alt="Screenshot 2022-01-27 at 14 59 02" src="https://user-images.githubusercontent.com/87828174/151434385-92ba3f0f-8dbb-4f59-ade0-10520c03b703.png">
+
+<img width="382" alt="Screenshot 2022-01-27 at 14 59 17" src="https://user-images.githubusercontent.com/87828174/151434422-a429fb62-3760-4ade-ac24-f18a689d9a4e.png">
+
+<img width="391" alt="Screenshot 2022-01-27 at 14 59 33" src="https://user-images.githubusercontent.com/87828174/151434455-ce3996db-b496-43dd-b31f-ec5e9cebe16f.png">
+
+<img width="444" alt="Screenshot 2022-01-27 at 14 59 55" src="https://user-images.githubusercontent.com/87828174/151434512-911cb099-7d27-4125-8c0c-7f20ee455ad1.png">
+
+<img width="420" alt="Screenshot 2022-01-27 at 15 00 14" src="https://user-images.githubusercontent.com/87828174/151434561-f08457fa-ca8a-4c5c-9a7c-cbbe5399456e.png">
+
+Two dataframes were created to see average cost and amenities for different styles and types:
+
+<img width="601" alt="Screenshot 2022-01-27 at 15 00 53" src="https://user-images.githubusercontent.com/87828174/151434655-c6ec7562-0ff0-4b11-a619-328f2e008752.png">
+
+<img width="582" alt="Screenshot 2022-01-27 at 15 01 04" src="https://user-images.githubusercontent.com/87828174/151434686-6ea2537c-c3db-4fdc-9ce1-4bc4e8166db7.png">
 
 #### Machine Learning Model: 
 
