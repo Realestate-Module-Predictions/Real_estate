@@ -79,7 +79,7 @@ Visualising House Prices:
 
 #### Exploratory Analysis and Visualisations:
 
-##### Importing the original dataset from the cloud
+##### Importing the original dataset from SQL Database
 
 <img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
 
@@ -88,7 +88,7 @@ Visualising House Prices:
 
 ![Counting the number of rooms in the residence (incl  bedroom, extra room, washroom, and kitchen)](https://user-images.githubusercontent.com/89428205/151258586-46a46fd6-25fe-4b85-8519-c8099fe3f103.png)
 
-##### Ammenities vs Count
+##### Amenities vs Count ( AC, Heat, garage Type, & family room ) 
 
 <img width="1084" alt="Screenshot 2022-01-27 at 14 43 25" src="https://user-images.githubusercontent.com/89428205/151432312-a56beedd-1d84-4fa5-8743-f7fe5617b0e8.png">
 
@@ -119,7 +119,7 @@ and testing sets
 ✓ Explanation of model choice, including
 limitations and benefits
 
-##### Reading Data Base from the Cloud:
+##### Reading Data Base from SQL Database:
 
 ![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
 
@@ -142,7 +142,8 @@ limitations and benefits
 will take in its fit method arrays X, y and will store the coefficients "w" of the linear model in its coef_ member
 The coefficient estimates for Ordinary Least Squares rely on the independence of the features. When features are correlated and the columns of the design matrix X have an approximately linear dependence, the design matrix becomes close to singular and as a result, the least-squares estimate becomes highly sensitive to random errors in the observed target, producing a large variance. This situation of multicollinearity can arise, for example, when data are collected without an experimental design.
 
-#####Reason of choice:
+##### Reason of choice:
+
 Choosing a model with those features is exactly what we need to make our predictions.
 We have tried different models on a smaller scale incl... Neural Networks, Decision Trees, Random Forests, and other forms of regresions like Logistic regression.
 the reasons of disregarding them varies, for example: in the neural network model it returns a very low accuracy. Decission trees, kills the kernel. 
