@@ -162,22 +162,22 @@ Two dataframes were created to see average cost and amenities for different styl
 #### Machine Learning Model: 
 
 ##### Description of preliminary data preprocessing
+
+Reading Data Base from SQL Database:
+
+![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
+
+
+Preprocessing
+
+![Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features)](https://user-images.githubusercontent.com/89428205/151253052-e8c1e709-e51e-4e53-950d-8e008d076cfe.png)
+
+For preprocessing for this machine learning model, we converted the date time object of the contract date column to numeric so it can be scaled. Additionally we dropped MLS ID and Address columns as in terms of features they do not play a role. The address column has already been converted to numerical latitudes and longitudes while MLS ID is not important.
+
 ##### Description of preliminary feature engineering, preliminary feature selection and decision-making process
 ##### Description of how data was split into training and testing sets
 ##### Explanation of model choice, including limitations and benefits
 
-##### Reading Data Base from SQL Database:
-
-![Reading Data Base from the Cloud](https://user-images.githubusercontent.com/89428205/151253028-b7b5b238-8f05-4919-afeb-b7572cf83d80.png)
-
-##### Plotting Sold price density, as well as sold price Boxplot:
-
-<img width="713" alt="Screenshot 2022-01-27 at 14 40 59" src="https://user-images.githubusercontent.com/89428205/151431934-ac1d74bd-fbcd-414f-9082-4bb835b0682c.png">
-
-
-##### Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features):
-
-![Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features)](https://user-images.githubusercontent.com/89428205/151253052-e8c1e709-e51e-4e53-950d-8e008d076cfe.png)
 
 ##### Final DF after processing (Fit and transform):
 
