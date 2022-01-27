@@ -69,13 +69,25 @@ Visualising House Prices:
 ### Coding
 
 #### Cleaning Dataset
- - Collected the Inactive listing and active listing files.
- - Converted all the null values to "0" and dropped all the unwanted columns.
- - Renamed the columns for better understanding and set index column to the dataframe. 
- - Converted the necessary column data type. 
- - From the street addresses found the Latitude and Longitude and added it to the merged it to main dataframe 
- - After making sure there are no null values and removing any null values in the dataframe. File saved as  " "Inactive_Listings_Final.csv"
- - Cleaned data is saved in the database
+
+- Imported Inactive listings CSV into a dataframe.
+- Converted all the null values in extra room column to "0" and dropped all the unwanted columns and features.
+- Renamed the columns for better understanding and dropped NaN values. 
+- Converted the necessary column data types to what we needed. (Contract Date to date time) 
+- Iterated through the street addresses and found the Latitude and Longitude of each listing and added it to the main dataframe 
+- Convert prices columns to numeric values for easier analysis.
+- Export dataframe to a csv file called Inactive_Listings_Final.csv
+- This file is added to PostGres pgAdmin database and connected to the model so we do not need to read in the csv file again.
+
+The following is code we ran to find the latitudes and longitudes:
+
+<img width="844" alt="Screenshot 2022-01-27 at 15 13 05" src="https://user-images.githubusercontent.com/87828174/151436364-e0c9a1d5-860b-4827-99bd-3a7bd6bd987e.png">
+
+The following screenshot is the final cleaned dataframe for inactive listings which we added to the database:
+
+<img width="1089" alt="Screenshot 2022-01-27 at 15 14 18" src="https://user-images.githubusercontent.com/87828174/151436517-b0762c69-9c2b-4048-b85f-a882184e63db.png">
+
+It had 30,718 rows and 19 columns. 
 
 #### Exploratory Analysis and Visualisations:
 
