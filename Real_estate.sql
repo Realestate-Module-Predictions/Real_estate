@@ -18,12 +18,18 @@ CREATE TABLE PUBLIC."StylePrice"(Id int,
 	BR numeric
 );
 
+Select * from "StylePrice";
+
+ALTER TABLE "StylePrice"
+RENAME TO "StyleAndPrice";
+
 Select "StylePrice"
 (
 ALTER "StylePrice",
 RENAME "sold_price" TO "soldprice"
 );
 
+--Create Table to import the data into
 CREATE TABLE PUBLIC."REALESTATE"(Id int,
 								 Municipality VARCHAR,
 								 Community VARCHAR,
@@ -48,8 +54,11 @@ CREATE TABLE PUBLIC."REALESTATE"(Id int,
 								 
 Select * from public."REALESTATE";
 
+--Drop the ID column
 Alter Table "REALESTATE"
 DROP COLUMN Id;
+
+--Find real estate that was sold for under the list price
 
 Select municipality, list_price, sold_price, community INTO "UnderAsking"
 FROM "REALESTATE"
@@ -60,6 +69,8 @@ SELECT * from "UnderAsking";
 Select COUNT(*)
 FROM "UnderAsking";
 
+--Find data that was sold for over the list price
+
 Select municipality, list_price, sold_price, community INTO "OverAsking"
 FROM "REALESTATE"
 WHERE sold_price > list_price;
@@ -69,11 +80,14 @@ Select * from "OverAsking";
 Select COUNT (*)
 FROM "OverAsking";
 
+--Create a table to show the prices with the Municipality, list price, sold price and community
 Select municipality, list_price, sold_price, community INTO "MunicipalityPrice"
 FROM "REALESTATE";
 
 Select BR, Style, list_price, sold_price INTO "StylePrice"
 FROM "REALESTATE";
+
+--Find the average sold price for each municipality
 
 SELECT
 	AVG(sold_price),
@@ -81,6 +95,8 @@ SELECT
 FROM "MunicipalityPrice"
 GROUP BY municipality
 ORDER BY AVG DESC;
+
+--Find the average sold price for each community
 
 SELECT AVG(sold_price),
 	community
@@ -91,20 +107,22 @@ ORDER BY AVG DESC;
 
 Select community from Avg_Sold_Price;
 
+--Create a new table that includes the average sold price for each Municipality
+
 SELECT Distinct ON(ap.community) ap.avg, ap.community, mp.municipality
 INTO New_MunPrice
 FROM Avg_Sold_Price as ap
 Inner Join "MunicipalityPrice" as mp ON (ap.community = mp.community);
 
+ALTER TABLE Avg_Sold_Price
+RENAME TO AvgSold$_Comm;
 
-Select * FROM Avg_Sold_Price;
+Select * FROM AvgSold$_Comm;
 
 Select * from Avg_Sold_Price
 ORDER BY AVG DESC;
 
-ALTER TABLE Avg_Sold_Price
-RENAME TO AvgSold$_Comm;
-
+--
 SELECT AVG(sold_price),
 	municipality
 INTO AvgSold$_Mun
@@ -130,3 +148,55 @@ ORDER BY AVG DESC;
 
 Select * from style_price
 ORDER BY avg DESC;
+
+Select * from avgsold$_mun;
+
+--Create a new table for Active Predictions
+CREATE TABLE PUBLIC."Active_Predictions" (
+	municipality Varchar,
+	community Varchar,
+	list_price numeric,
+	type Varchar,
+	style Varchar,
+	br numeric,
+	er numeric,
+	wr numeric,
+	fr Varchar,
+	kitchen numeric,
+	gar_type VARCHAR,
+	ac VARCHAR,
+	heat VARCHAR,
+	contract_date DATE,	
+	mls_id Varchar,
+	address Varchar,
+	lat numeric,
+	lng numeric,
+	selling_price_predictions numeric
+);
+
+--Create a new table for Inactive Predictions
+CREATE TABLE PUBLIC."Inactive_Predictions" (
+	municipality Varchar,
+	community Varchar,
+	list_price numeric,
+	sold_price numeric,
+	type Varchar,
+	style Varchar,
+	br numeric,
+	er numeric,
+	wr numeric,
+	fr Varchar,
+	kitchen numeric,
+	gar_type VARCHAR,
+	ac VARCHAR,
+	heat VARCHAR,
+	contract_date DATE,	
+	mls_id Varchar,
+	address Varchar,
+	lat numeric,
+	lng numeric,
+	sold_price_predictions numeric
+);
+
+Select * from "Active_Predictions";
+Select * from "Inactive_Predictions";
