@@ -68,8 +68,6 @@ Visualising House Prices:
 
 ### Database
 <p>The purpose of this database is to import, format, combine and clean sets of data.<p>
-<p>The below image shows how we connected our database to our model:<p>
-<p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
 <p>A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.<p>
 <p>The ID column is dropped from the REALESTATE table as an ID number set is already generated in PGAdmin and having the two ID's side by side was redundant and more difficult to view.<p>
 <p>Two tables were created from the original REALESTATE table to show how many listings were sold for more than they were listed (table named OverAsking) and how many listings were sold for below they were listed (table named UnderAsking). Below is an image of how these two tables were calculated in PGAdmin.
@@ -80,6 +78,9 @@ Visualising House Prices:
 <p>An Inner Join was used so that the Municipality column can be included in the Average Community price sold Table. Below is an image of how the Inner Join was performed.<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png"><p>
 <p>An additional 2 tables were created in order to import the Active_Predictions file and the Inactive_Predictions file. Each of these files contain the predicted sold price values that were calculated using our model.<p>
+  
+<p>The below image shows how we connected our database to our model:<p>
+<p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
 
 <p>Average Sold Price for each Toronto community:<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Communities_SoldPrice.png"><p>
