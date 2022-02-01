@@ -60,7 +60,7 @@ It had 30,718 rows and 19 columns.
 
 ### Database & Connection
 
-The purpose of this database is to import, format, combine and clean sets of data. A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.
+The purpose of this database is to import, format, combine and clean sets of data. A table is created with the necessary columns in order for our data to be imported into PGAdmin. This data is the csv file which is produced after cleaning and creation of Latitudes and Longitudes for all rows. We named this Table REALESTATE.
 
 The ID column is dropped from the REALESTATE table as an ID number set is already generated in PGAdmin and having the two ID's side by side was redundant and more difficult to view.
 
