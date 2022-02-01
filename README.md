@@ -67,11 +67,12 @@ Visualising House Prices:
 
 
 ### Database
-<p>The purpose of this database is to format, combine and clean sets of data.<p>
+<p>The purpose of this database is to import, format, combine and clean sets of data.<p>
 <p>Connection between the database and the model:<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
-<p>-Create a table with columns to import the raw data from the CSV. This column is called REALESTATE.<p>
-<p>-Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
+<p>A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.<p>
+<p>
+  -Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
 <p>-Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
 <p>-Create a table from the REALESTATE table to show which properties sold for under their listing price. Named this table UnderAsking.<p>
 <p>-Create a table that calculates the avg sold price and groups it by community. This will show us the average sold price for each community.<p>
