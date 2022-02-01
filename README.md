@@ -58,7 +58,7 @@ The following screenshot is the final cleaned dataframe for inactive listings wh
 
 It had 30,718 rows and 19 columns.
 
-### Database Connection and Setting up
+### Database & Connection
 
 The purpose of this database is to import, format, combine and clean sets of data. A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.
 
@@ -150,7 +150,7 @@ Two dataframes were created to see average cost and amenities for different styl
 
 ### Machine Learning Model 
 
-#### Description of preliminary data preprocessing
+#### Description of data preprocessing
 
 Reading Data Base from SQL Database into Machine_Learning.ipynb:
 
@@ -183,35 +183,31 @@ We convert the contract_date column from a datetime object to numeric data types
 ![Preprocessing, (Dropping a few columns, as well as converting contract date from object to typr, and back to numeric in order to scal it with other x features)](https://user-images.githubusercontent.com/89428205/151253052-e8c1e709-e51e-4e53-950d-8e008d076cfe.png)
 
 
-##### Description of preliminary feature engineering, preliminary feature selection and decision-making process
+#### Description of feature engineering, feature selection and decision-making process
 
-The features (X) remaining are chosen as they carry significant effect on the property value and selling prices (y). Location and Amenities are of high importance to customers when they are choosing to buy a house. Date of listing gives us an idea of when they were put on the market and how much they were evenetually sold for.
-
-The following code shows that:
-
-<img width="763" alt="Screenshot 2022-01-27 at 17 18 06" src="https://user-images.githubusercontent.com/87828174/151452969-e2834f1b-5052-466c-b87b-5cf98fdbbe85.png">
-
-Afterwards we seperate the categorical variables and encode them using Ordinal Encoding from sklearn. We merge the encoded dataframe into the original one and drop unecessary columns.
+The features (X) remaining are chosen as they carry significant effect on the property value and selling prices (y). Location and Amenities are of high importance to customers when they are choosing to buy a house. Date of listing gives us an idea of when they were put on the market and how much they were evenetually sold for. Afterwards we seperate the categorical variables and encode them using Ordinal Encoding from sklearn. We merge the encoded dataframe into the original one and drop unecessary columns.
 
 <img width="663" alt="Screenshot 2022-01-27 at 17 33 47" src="https://user-images.githubusercontent.com/87828174/151454634-2ca9fc3b-72e2-482c-b614-26d7443e7255.png">
 
-##### Description of how data was split into training and testing sets
+#### Description of how data was split into training and testing sets & how model is trained
 
 The sold price is the value we want to predict in active listings (unsold houses). Our aim is to train the model on inactive listings (sold houses) and then predict the selling price on currently listed (active listings) houses based on these features. As we want to predict selling price we set that as y and drop it in the dataframe whose remaining values we assign to X. We use train_test_split to split the model in a training and testing set. Finally we create a StandardScaler() instance to scale x values to avoid extreme values effecting final predictions. 
 
 <img width="591" alt="Screenshot 2022-01-27 at 17 40 02" src="https://user-images.githubusercontent.com/87828174/151455300-c073792e-608f-4d4d-8fd2-23b9eda5f9d2.png">
 
-##### Explanation of model choice, including limitations and benefits
+After data is seperated and scaled, we train the model on the training set and get accuracy scores from the model running on the testing set. 
+
+#### Explanation of model choice, including limitations and benefits
 
 As we want to make predictions on a continuous variables, classification models are not useful. We tried different regressor models. The Neural Network model yielded a lower accuracy score of 86%. Logistic regression did not work and Decision Trees would kill the kernel and now allow computation. For our continuous variable features and the type of predictions we wanted, the linear regression model worked the best. We trained the model on the training scaled data and predict on the X_test_scaled or the scaled test data. The errors are printed and we get a variance score of 97 %.
 
 <img width="789" alt="Screenshot 2022-01-27 at 17 53 45" src="https://user-images.githubusercontent.com/87828174/151456685-39c2a7f6-5c7b-498b-a354-609107cf2754.png">
 
-Scores:
+#### Final Accuracy Scores
 
 <img width="180" alt="Screenshot 2022-01-27 at 17 56 29" src="https://user-images.githubusercontent.com/87828174/151456963-a26c6550-c1c5-4fef-8c04-efa084225cb9.png">
 
-##### Predictions on entire dataset
+#### Predictions on entire dataset
 
 Scaler instance created again and scales the entire X features dataframe instead of test and train sets individually. Predictions are made on this scaled X dataframe. R^2 score of these predicted values to actual values is high at 97 % as we have seen before.
 
@@ -221,13 +217,15 @@ These predicted values are added as a seperate column to the original dataset of
 
 <img width="1098" alt="Screenshot 2022-01-27 at 18 05 28" src="https://user-images.githubusercontent.com/87828174/151457976-c5d925f1-1126-4c63-9a29-70df203c40a0.png">
 
-##### Importing and cleaning Active Listings
+#### Importing and cleaning Active Listings
+
+The model has now been trained on the sold real estate listings and is ready to be used for active unsold houses.
 
 Since the aim of the model is to predict selling prices on currently unsold house listings, we can now use the trained model as before on the active_listings_raw dataset. We repeat the same process of cleaning as mentioned before. Latitudes and Longitudes are also added for this dataset and required columns are dropped. Datatypes are also converted and NaNs are dropped. This final dataframe before machine learning processing is names merge2_df as seen below:
 
 <img width="1104" alt="Screenshot 2022-01-27 at 18 10 03" src="https://user-images.githubusercontent.com/87828174/151458491-012bf6fb-daa6-48e6-b09e-dddda35c86de.png">
 
-##### Predictions on the Active Listings
+#### Predictions on the Active Listings
 
 The same process of preprocessing is repeated. Categorical encoding and scaling is performed. The model is used on the this dataset. We do not need to seperate dataset into x and y since these are active listings (Unsold houses) they do not have a selling price (y). Therefore the entire dataset values are features or X. 
 
