@@ -74,16 +74,13 @@ Visualising House Prices:
 <p>The ID column is dropped from the REALESTATE table as an ID number set is already generated in PGAdmin and having the two ID's side by side was redundant and more difficult to view.<p>
 <p>Created two tables from the original REALESTATE table to show how many listings that were sold for more than they were listed (table named OverAsking) and how many were sold for below they were listed (UnderAsking). Below is an image of how these two tables were calculated in PGAdmin.
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/ReadMe_Final_WIP/Screen%20Shot%202022-02-01%20at%2010.25.35%20AM.png"><p>
-  
--Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
-<p>-Create a table from the REALESTATE table to show which properties sold for under their listing price. Named this table UnderAsking.<p>
-<p>-Create a table that calculates the avg sold price and groups it by community. This will show us the average sold price for each community.<p>
-<p>-Create a table that calculates the avg sold price and groups it by municipality. This will show us the average sold price for each municipality.<p>
-<p>-Use Inner Join so that the Community column is also included in the table that displays the average sold price for each municipality.<p>
-<p>-Created a Table to import the data from the Active_Predictions file. This file includes the predicted Sold prices on Active listings.<p>
-<p>-Created a Table to import the data from the Inactive_Predictions file. This file includes the predicted Sold prices on Inactive listings.<p>
-<p>Join:<p>
+<p>A larger proportion of houses being sold for more than the price that they were listed for is a sign that housing prices overall are going to increase, while a larger porportion of houses being sold for less than they were listed for is a sign that housing prices overall are going to decrease. Based on our results, it appears that housing prices are going to continue to increase.<p>
+<p>In our database we want to show the average sold prices by Community and Municipality. In order to do this we created a table that calculates the average sold price grouped by Community and the average sold price grouped by Municipality. Below is an image of how this was calculated.
+<p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/ReadMe_Final_WIP/Screen%20Shot%202022-02-01%20at%2011.02.20%20AM.png"><p>
+<p>An Inner Join was used so that the Municipality column can be included in the Average Community price sold Table. Below is an image of how the Inner Join was performed.<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png"><p>
+
+<p>An additional 2 tables were created in order to import the Active_Predictions file and the Inactive_Predictions file. Each of these files contain the predicted sold price values that were calculated using our model.<p>
 
 <p>Average Sold Price for each Toronto community:<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Communities_SoldPrice.png"><p>
