@@ -67,8 +67,8 @@ Visualising House Prices:
 
 
 ### Database
-<p>The purpose of this database is to format, combine and clean sets of data.<p>
-<p>Connection between the database and the model: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png<p>
+<p>The purpose of this database is to format, combine and clean sets of data.<p>t
+<p>Connection between the database and the model: ![alt text](https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png)<p>
 <p>-Create a table with columns to import the raw data from the CSV. This column is called REALESTATE.<p>
 <p>-Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
 <p>-Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
