@@ -71,9 +71,11 @@ Visualising House Prices:
 <p>Connection between the database and the model:<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
 <p>A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.<p>
-<p>
-  -Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
-<p>-Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
+<p>The ID column is dropped from the REALESTATE table as an ID number set is already generated in PGAdmin and having the two ID's side by side was redundant and more difficult to view.<p>
+<p>Created two tables from the original REALESTATE table to show how many listings that were sold for more than they were listed (table named OverAsking) and how many were sold for below they were listed (UnderAsking). Below is an image of how these two tables were calculated in PGAdmin.
+<p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/ReadMe_Final_WIP/Screen%20Shot%202022-02-01%20at%2010.25.35%20AM.png"><p>
+  
+-Create a table from the REALESTATE table to show which properties sold for higher than they were listed. Named this table OverAsking.<p>
 <p>-Create a table from the REALESTATE table to show which properties sold for under their listing price. Named this table UnderAsking.<p>
 <p>-Create a table that calculates the avg sold price and groups it by community. This will show us the average sold price for each community.<p>
 <p>-Create a table that calculates the avg sold price and groups it by municipality. This will show us the average sold price for each municipality.<p>
