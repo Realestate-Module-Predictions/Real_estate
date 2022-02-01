@@ -68,7 +68,7 @@ Visualising House Prices:
 
 ### Database
 <p>The purpose of this database is to import, format, combine and clean sets of data.<p>
-<p>Connection between the database and the model:<p>
+<p>The below image shows how we connected our database to our model:<p>
 <p><img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
 <p>A table is created with the necessary columns in order for our raw data to be imported into PGAdmin. We named this Table REALESTATE.<p>
 <p>The ID column is dropped from the REALESTATE table as an ID number set is already generated in PGAdmin and having the two ID's side by side was redundant and more difficult to view.<p>
