@@ -67,7 +67,7 @@ Visualising House Prices:
 
 
 ### Database
-<p>The purpose of this database is to format, combine and clean sets of data.<p>t
+<p>The purpose of this database is to format, combine and clean sets of data.<p>
 <p>Connection between the database and the model: <img width="1101" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png"><p>
 <p>-Create a table with columns to import the raw data from the CSV. This column is called REALESTATE.<p>
 <p>-Drop the ID column as there is already a column generated in SQL. This would make the imported ID column redundant.<p>
@@ -78,9 +78,9 @@ Visualising House Prices:
 <p>-Use Inner Join so that the Community column is also included in the table that displays the average sold price for each municipality.<p>
 <p>-Created a Table to import the data from the Active_Predictions file. This file includes the predicted Sold prices on Active listings.<p>
 <p>-Created a Table to import the data from the Inactive_Predictions file. This file includes the predicted Sold prices on Inactive listings.<p>
-<p>Join: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png <p>
-<p>Average Sold Price for each Toronto community: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Communities_SoldPrice.png<p>
-<p>Average Sold Price for each Toronto Municipality: https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Municipalities_SoldPrice.png<p>
+<p>Join: <img width="1101" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png><p>
+<p>Average Sold Price for each Toronto community: <img width="1101" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Communities_SoldPrice.png><p>
+<p>Average Sold Price for each Toronto Municipality: <img width="1101" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/GroupBy_Municipalities_SoldPrice.png><p>
 
 
   
