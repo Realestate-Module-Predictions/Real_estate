@@ -227,13 +227,13 @@ Since the aim of the model is to predict selling prices on currently unsold hous
 
 #### Predictions on the Active Listings
 
-The same process of preprocessing is repeated. Categorical encoding and scaling is performed. The model is used on the this dataset. We do not need to seperate dataset into x and y since these are active listings (Unsold houses) they do not have a selling price (y). Therefore the entire dataset values are features or X. 
+The same process of preprocessing is repeated. Categorical encoding and scaling is performed. The model is used on the this dataset. We do not need to seperate dataset into x and y since these are active listings (Unsold houses) they do not have a selling price (y). Therefore the entire dataset values are features or X. A new scaling instance fitted on entire inactive listings dataset is used to scale X (active dataset).
 
-<img width="350" alt="Screenshot 2022-01-27 at 18 17 17" src="https://user-images.githubusercontent.com/87828174/151459203-27797901-c0cd-48ed-96f8-7149298bc1c3.png">
+<img width="983" alt="Screenshot 2022-02-01 at 20 08 12" src="https://user-images.githubusercontent.com/87828174/152077368-00db0d45-fe9d-4d69-a6da-52e2331223c7.png">
 
 These predicted values are added to the original dataframe merge2_df in a different column and exported as a csv file. There are 530 listings.
 
-<img width="1101" alt="Screenshot 2022-01-27 at 18 22 15" src="https://user-images.githubusercontent.com/87828174/151459740-7327d486-835a-49e4-b62a-108f129f3718.png">
+<img width="1088" alt="Screenshot 2022-02-01 at 20 08 40" src="https://user-images.githubusercontent.com/87828174/152077412-bdc65bf1-cf90-4c96-a06a-f86f1e3fac0a.png">
 
 ### Tableau Analysis
 
