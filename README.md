@@ -195,7 +195,7 @@ The sold price is the value we want to predict in active listings (unsold houses
 
 <img width="591" alt="Screenshot 2022-01-27 at 17 40 02" src="https://user-images.githubusercontent.com/87828174/151455300-c073792e-608f-4d4d-8fd2-23b9eda5f9d2.png">
 
-After data is seperated and scaled, we train the model on the training set and get accuracy scores from the model running on the testing set. 
+After data is seperated and scaled, we train the model on the training set and get accuracy scores from the model running on the testing set. The X-train features with y-train of training dataset is fitted to the linear regressor. The linear regressor then predicts on the testing X set. These predicted values are analysed along side the actual value of y. The predictions and y_test are selling prices.
 
 #### Explanation of model choice, including limitations and benefits
 
@@ -204,6 +204,8 @@ As we want to make predictions on a continuous variables, classification models 
 <img width="789" alt="Screenshot 2022-01-27 at 17 53 45" src="https://user-images.githubusercontent.com/87828174/151456685-39c2a7f6-5c7b-498b-a354-609107cf2754.png">
 
 #### Final Accuracy Scores
+
+The predictions are scored against the actual values of y. These are the following results:
 
 <img width="180" alt="Screenshot 2022-01-27 at 17 56 29" src="https://user-images.githubusercontent.com/87828174/151456963-a26c6550-c1c5-4fef-8c04-efa084225cb9.png">
 
