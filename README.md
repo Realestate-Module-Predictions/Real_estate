@@ -85,7 +85,7 @@ An additional 2 tables were created in order to import the Active_Predictions fi
 
 #### Python Analysis
 
-We imported the original dataset from SQL Database:
+We imported the original dataset from SQL Database using SQLAlchemy:
 
 <img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
 
