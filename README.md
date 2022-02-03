@@ -78,6 +78,9 @@ An Inner Join was used so that the Municipality column can be included in the Av
 
 <img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Inner%20Join%20SQL.png">
 
+<p>Below are the results from the table that was created from the Inner Join.<p>
+<img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/ReadMe_Final_WIP/Screen%20Shot%202022-02-02%20at%207.14.31%20PM.png">
+
 An additional 2 tables were created in order to import the Active_Predictions file and the Inactive_Predictions file. Each of these files contain the predicted sold price values that were calculated using our model. The image below shows how we connected our database to our model:
 
 <img width="750" alt="Screenshot 2022-01-16 at 20 29 09" src="https://github.com/Realestate-Module-Predictions/Real_estate/blob/Database-2/Connected_Database.png">
