@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inactive Real Estate listings</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>
+      Real Estate
+      {% for place in places %}
+      <h2>
+      {{ place.Id }}
+
+        <p>
+          <b>Municipality</b>: {{ place.Municipality }}
+        </p>
+        <p>
+          <b>Community</b>: {{ place.Community }}
+        </p>
+        <p>
+          <b>List_Price($)</b>: {{ place.List_Price }}
+        </p>
+        <p>
+          <b>Sold_Price($)</b>: {{ place.Sold_Price }}
+        </p>
+        <p>
+          <b>Type</b>: {{ place.Type }}
+        </p>
+        <p>
+          <b>Style</b>: {{ place.Style }}
+        </p>
+        <p>
+          <b>BR</b>: {{ place.BR }}
+        </p>
+        <p>
+          <b>ER</b>: {{ place.ER }}
+        </p>
+        <p>
+          <b>WR</b>: {{ place.WR }}
+        </p>
+        
+        <p>
+          <b>FR</b>: {{ place.FR }}
+        </p>
+        <p>
+          <b>Kitchen</b>: {{ place.Kitchen }}
+        </p>
+        <p>
+          <b>Gar_Type</b>: {{ place.Gar_Type }}
+        </p>
+        <p>
+          <b>AC</b>: {{ place.AC }}
+        </p>
+        <p>
+          <b>Heat</b>: {{ place.Heat }}
+        </p>
+        <p>
+          <b>Contract_Date</b>: {{ place.Contract_Date }}
+        </p>
+        <p>
+          <b>MLS_ID</b>: {{ place.MLS_ID }}
+        </p>
+        <p>
+          <b>Address</b>: {{ place.Address }}
+        </p>
+        <p>
+          <b>Lat</b>: {{ place.Lat }}
+        </p>
+        <p>
+          <b>Lng</b>: {{ place.Lng }}
+        </p>
+      </h2>
+      </h1>
+      {% endfor %}
+    
+
+  </body>
+</html>

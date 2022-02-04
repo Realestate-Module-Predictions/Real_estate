@@ -1,0 +1,13 @@
+body {
+  font-family: courier;
+  background-color: #ffffe0;
+}
+
+input {
+  background: none;
+  font-family: courier;
+  font-size: 1.1em;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
