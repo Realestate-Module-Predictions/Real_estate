@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div clas="col-sm-4 text-wrap">
-                    <h3>Real Estate Price Predications <br><small>Ufologists Weigh In</small></h3>
+                    <h3>Real Estate Price Predications <br><small>Contract date</small></h3>
                 </div>
                 <div class="col-sm-8">
                     <p>Real Estate Price Predication using Machine Learning
@@ -43,7 +43,7 @@
                         <ul class="list-group bg-dark">
                             <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
+                                <input type="text" placeholder="1/10/2010" id="contract_date" />
                             </li>
 
                             <li class="list-group-item bg-dark">
@@ -56,9 +56,9 @@
                     <table class="table table-responsive table-condensed table-striped text-wrap">
                         <thead>
                             <tr>
-                                <th class="col-med-1">mls_id</th>
-                                <th class="col-med-1">municipality</th>
-                                <th class="col-med-1">community</th>
+                                <th class="col-med-1">MLS_id</th>
+                                <th class="col-med-1">Municipality</th>
+                                <th class="col-med-1">Community</th>
                                 <th class="col-med-1">list_price</th>
                                 <th class="col-med-1">type</th>
                                 <th class="col-med-1">style</th>
@@ -80,23 +80,23 @@
                                 <tr> 
                                 <td>{{entry.mls_id}}</td>
                                 <td>{{entry.municipality}}</td>
-                                <td>community</td>
+                                <td>{{entry.community}}</td>
                                 <td>{{entry.list_price}}</td>
-                                <td>type</td>
+                                <td>{{entry.type}}</td>
                                 <td>{{entry.style}}</td>
-                                <td>br</td>
-                                <td>er</td>
-                                <td>wr</td>
-                                <td>fr</td>
-                                <td>kitchen</td>
-                                <td>gar_type</td>
-                                <td>ac</td>
-                                <td>heat</td>
-                                <td>contract_date</td>
-                                <td>address</td>
-                                <td>lat</td>
-                                <td>lng</td>
-                                <td>selling_price_predictions</td>
+                                <td>{{entry.br}}</td>
+                                <td>{{entry.er}}</td>
+                                <td>{{entry.wr}}</td>
+                                <td>{{entry.fr}}</td>
+                                <td>{{entry.kitchen}}</td>
+                                <td>{{entry.gar_type}}</td>
+                                <td>{{entry.ac}}</td>
+                                <td>{{entry.heat}}</td>
+                                <td>{{entry.contract_date}}</td>
+                                <td>{{entry.address}}</td>
+                                <td>{{entry.lat}}</td>
+                                <td>{{entry.lng}}</td>
+                                <td>{{entry.selling_price_predictions}}</td>
                                 </tr>
                             {% endfor %}
                         </thead>

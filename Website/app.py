@@ -24,10 +24,27 @@ def index():
   df = sqlio.read_sql_query('''SELECT * FROM public."REALESTATE";''', conn)
   data_list = []
   for i in range(10):
-    estatedata = {'municipality': df["municipality"].iloc[i]
+    estatedata = {'mls_id': df["mls_id"].iloc[i]
+                ,'municipality': df["municipality"].iloc[i]
                 ,'style': df['style'].iloc[i]
                 ,'list_price': df['list_price'].iloc[i]
-                ,'mls_id': df['mls_id'].iloc[i]}
+                ,'community': df['community'].iloc[i]
+                ,'type': df['type'].iloc[i]
+                ,'br': df['br'].iloc[i]
+                ,'er': df['er'].iloc[i]
+                ,'wr': df['wr'].iloc[i]
+                ,'fr': df['fr'].iloc[i]
+                ,'kitchen': df['kitchen'].iloc[i]
+                ,'gar_type': df['gar_type'].iloc[i]
+                ,'ac': df['ac'].iloc[i]
+                ,'heat': df['heat'].iloc[i]
+                ,'contract_date': df['contract_date'].iloc[i]
+                ,'address': df['address'].iloc[i]
+                ,'lat': df['lat'].iloc[i]
+                ,'lng': df['lng'].iloc[i]
+                
+              }
+
     data_list.append(estatedata)
   return render_template("index.html", data_list = data_list)
 
