@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+  
+
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">RealEstate</a>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">Real Estate Price Predications</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div clas="col-sm-4 text-wrap">
+                    <h3>Real Estate Price Predications <br><small>Ufologists Weigh In</small></h3>
+                </div>
+                <div class="col-sm-8">
+                    <p>Real Estate Price Predication using Machine Learning
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <form class="bg-dark">
+                        <p>Filter Search</p>
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter Date</label>
+                                <input type="text" placeholder="1/10/2010" id="datetime" />
+                            </li>
+
+                            <li class="list-group-item bg-dark">
+                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-sm-9">
+                    <table class="table table-responsive table-condensed table-striped text-wrap">
+                        <thead>
+                            <tr>
+                                <th class="col-med-1">mls_id</th>
+                                <th class="col-med-1">municipality</th>
+                                <th class="col-med-1">community</th>
+                                <th class="col-med-1">list_price</th>
+                                <th class="col-med-1">type</th>
+                                <th class="col-med-1">style</th>
+                                <th class="col-med-1">br</th>
+                                <th class="col-med-1">er</th>
+                                <th class="col-med-1">wr</th>
+                                <th class="col-med-1">fr</th>
+                                <th class="col-med-1">kitchen</th>
+                                <th class="col-med-1">gar_type</th>
+                                <th class="col-med-1">ac</th>
+                                <th class="col-med-1">heat</th>
+                                <th class="col-med-1">contract_date</th>
+                                <th class="col-med-1">address</th>
+                                <th class="col-med-1">lat</th>
+                                <th class="col-med-1">lng</th>
+                                <th class="col-med-1">selling_price_predictions</th>
+                            </tr>
+                            {%for entry in data_list: %}
+                                <tr> 
+                                <td>mls_id_entry</td>
+                                <td>{{entry.municipality}}</td>
+                                <td>community</td>
+                                <td>{{entry.list_price}}</td>
+                                <td>type</td>
+                                <td>{{entry.style}}</td>
+                                <td>br</td>
+                                <td>er</td>
+                                <td>wr</td>
+                                <td>fr</td>
+                                <td>kitchen</td>
+                                <td>gar_type</td>
+                                <td>ac</td>
+                                <td>heat</td>
+                                <td>contract_date</td>
+                                <td>address</td>
+                                <td>lat</td>
+                                <td>lng</td>
+                                <td>selling_price_predictions</td>
+                                </tr>
+                            {% endfor %}
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>	
+    <script src="{{ url_for('static', filename='js/realestate.js') }}"></script>
+</body>
+</html>
