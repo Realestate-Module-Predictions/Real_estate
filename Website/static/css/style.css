@@ -1,12 +1,18 @@
 body {
 
-    color: #f7f7f7;
+    color: white;
+
   }
 
   .jumbotron {
-    background-image: url("../images/nasa.jpg");
-    background-size: 100% 100%;
+    background-image: url("../images/Prediction.jpg");
+    background-size: 50% 125%;
     text-align: center;
+  }
+
+h1 {
+    color: black;
+font-weight: 900;
   }
 
   h3 {
@@ -14,11 +20,24 @@ body {
     overflow-wrap: break-word;
   }
 
-  /* table{
+ table{
       table-layout:fixed;
       word-wrap: break-word;
-  } */
+     
+  } 
 
-  /* td{
+
+  th {
+  background-color: #2A3E2B;
+  color: white;
+} 
+
+
+ table, th, td {
+  border: 1px solid #ddd;
+ 
+}
+
+ td{
       word-wrap: break-word;
-  } */
+  } 

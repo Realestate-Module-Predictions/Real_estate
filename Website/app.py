@@ -42,7 +42,7 @@ def index():
                 ,'address': df['address'].iloc[i]
                 ,'lat': df['lat'].iloc[i]
                 ,'lng': df['lng'].iloc[i]
-                
+                #,'selling_price_predictions': df['selling_price_predictions'].iloc[i]
               }
 
     data_list.append(estatedata)
