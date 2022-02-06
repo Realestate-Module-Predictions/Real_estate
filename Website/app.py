@@ -26,7 +26,8 @@ def index():
   for i in range(10):
     estatedata = {'municipality': df["municipality"].iloc[i]
                 ,'style': df['style'].iloc[i]
-                ,'list_price': df['list_price'].iloc[i]}
+                ,'list_price': df['list_price'].iloc[i]
+                ,'mls_id': df['mls_id'].iloc[i]}
     data_list.append(estatedata)
   return render_template("index.html", data_list = data_list)
 
