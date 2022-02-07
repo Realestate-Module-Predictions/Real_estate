@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-  df = sqlio.read_sql_query('''SELECT * FROM public."REALESTATE";''', conn)
+  df = sqlio.read_sql_query('''SELECT * FROM public."Active_Predictions";''', conn)
   data_list = []
   for i in range(100):
     estatedata = {'mls_id': df["mls_id"].iloc[i]
@@ -42,7 +42,7 @@ def index():
                 ,'address': df['address'].iloc[i]
                 ,'lat': df['lat'].iloc[i]
                 ,'lng': df['lng'].iloc[i]
-                #,'selling_price_predictions': df['selling_price_predictions'].iloc[i]
+                ,'selling_price_predictions': df['selling_price_predictions'].iloc[i]
               }
 
     data_list.append(estatedata)
