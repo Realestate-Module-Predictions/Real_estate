@@ -23,7 +23,7 @@ app = Flask(__name__)
 def index():
   df = sqlio.read_sql_query('''SELECT * FROM public."REALESTATE";''', conn)
   data_list = []
-  for i in range(10):
+  for i in range(100):
     estatedata = {'mls_id': df["mls_id"].iloc[i]
                 ,'municipality': df["municipality"].iloc[i]
                 ,'style': df['style'].iloc[i]
