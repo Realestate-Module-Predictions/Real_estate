@@ -3,6 +3,7 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    background-color:rgb(195, 207, 214) ;
   }
 
   .table-col {
@@ -26,4 +27,25 @@
     background-color: rgb(247, 247, 247);
     
   
+  }
+
+  /* .image-1{
+    background-image: url(../images/Predicted_vs_Sold.png);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image-2{
+    background-image: url(../images//visualising\ house\ price\ for\ sold\ houses.png);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  } */
+
+  .images {
+    background-color: rgb(166, 205, 212);
   }
