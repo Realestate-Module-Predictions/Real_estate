@@ -253,5 +253,6 @@ Using JavaScript, HTML and CSS, a webpage was created which can be deployed thro
 
 - The RealEstate button refreshes the page and removes all filters
 - The Analysis for Sold Properties is a link to a Tableau story of analysis on the sold houses data
-- The filter on the left allows you to filter the active listings table by date, municipality, community, type and style
+- The filter on the left allows you to filter the active listings table by date, municipality, community, type, style, Bedrooms and washrooms
 - Tableau story on active houses is embedded into the webpage
+- The initial analysis images are below 
