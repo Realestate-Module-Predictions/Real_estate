@@ -242,7 +242,7 @@ Additional Analysis was done on Tableau using active and inactive listings with 
 
 [Tableau Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story)
 
-[Tableau Active Listings Dashboard Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis_dashboard/Final_Project_Analysis)
+[Tableau Active Listings Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis_dashboard/Active_Listings)
 
 ### Dashboard
 
