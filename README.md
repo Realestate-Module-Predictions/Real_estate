@@ -89,7 +89,7 @@ We imported the original dataset from SQL Database using SQLAlchemy:
 
 <img width="1093" alt="Screenshot 2022-01-27 at 14 39 30" src="https://user-images.githubusercontent.com/89428205/151431614-c8ab6536-43c8-4839-89f2-f4454517e760.png">
 
-Visualising House Prices:
+Visualising House Prices for sold houses:
 
 <img width="758" alt="Screen Shot 2022-01-16 at 4 00 11 PM" src="https://user-images.githubusercontent.com/89428205/149681899-6b2e0ed6-f18f-4f65-a9d8-a6be4d4901e8.png">
 
