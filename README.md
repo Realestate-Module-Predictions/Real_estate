@@ -245,6 +245,7 @@ Additional Analysis was done on Tableau using active and inactive listings with 
 [Tableau Active Listings Story Link](https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis_dashboard/Active_Listings)
 
 ### Dashboard
+https://realestate-module-predictions.github.io/Real_estate/
 
 Using JavaScript, HTML and CSS, a webpage was created which can be deployed through Github pages. The dashboard consists of an interactive table which can be filtered and an embedded Tableau story which shows visualisations of the Active Dataset. The image below is a screenshot of the page:
   
