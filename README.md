@@ -1,5 +1,5 @@
 # Real Estate Predictions.
-
+![960x0](https://user-images.githubusercontent.com/87828174/153254346-b5ffc20c-4523-46ca-bd7d-b70f32a51919.jpeg)
 ## Background to project
 
 ### Selected topic
