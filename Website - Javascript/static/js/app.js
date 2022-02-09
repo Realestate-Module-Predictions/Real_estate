@@ -47,7 +47,7 @@ function updateFilters() {
     }
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
-  
+
   }
   
   // 7. Use this function to filter the table when data is entered.
@@ -61,9 +61,9 @@ function updateFilters() {
     Object.entries(filters).forEach(([key,value]) => {
       filteredData = filteredData.filter(row => row[key] === value);
     }); 
-      // 10. Finally, rebuild the table using the filtered data
-      buildTable(filteredData);
-    
+    // 10. Finally, rebuild the table using the filtered data
+    buildTable(filteredData);
+  
     };
   
   // 2. Attach an event to listen for changes to each filter
@@ -71,3 +71,4 @@ function updateFilters() {
   
   // Build the table when the page loads
   buildTable(tableData);
+  

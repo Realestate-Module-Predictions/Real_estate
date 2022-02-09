@@ -1,113 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Price Predictions</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="static/css/style.css">
-  
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Price Predictions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body class="bg-dark">
-    
-    <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">RealEstate</a>
-        </nav>
-        <div class="jumbotron">
-            <h1 class="display-2">Real Estate Price Predications</h1>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div clas="col-sm-4 text-wrap">
-                    <h3>Real Estate Price Predications <br><small>Contract date</small></h3>
-                </div>
-                <div class="col-sm-8">
-                    <p>Real Estate Price Predication using Machine Learning
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3">
-                    <form class="bg-dark">
-                        <p>Filter Search</p>
-                        <ul class="list-group bg-dark">
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter Date</label>
-                                <input type="text" placeholder="2021-01-13" id="contract_date" />
-                            </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="state">Enter Municipality</label>
-                                <input type="text" class="form-control" placeholder="Toronto C07" id="Municipality" />
-                            </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="state">Enter Community</label>
-                                <input type="text" class="form-control" placeholder="Westminster-Branson" id="Community" />
-                            </li>
 
-                            <li class="list-group-item bg-dark">
-                                <label for="state">Type</label>
-                                <input type="text" class="form-control" placeholder="Detachedn" id="Type" />
-                            </li>
-                    
-                            <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="col-sm-9">
-                    <table class="table table-responsive table-condensed table-striped text-wrap">
-                        <thead>
-                            <tr>
-                                <th class="col-med-1">Municipality</th>
-                                <th class="col-med-1">Community</th>
-                                <th class="col-med-1">List Price</th>
-                                <th class="col-med-1">Type</th>
-                                <th class="col-med-1">Style</th>
-                                <th class="col-med-1">Br</th>
-                                <th class="col-med-1">Er</th>
-                                <th class="col-med-1">Wr</th>
-                                <th class="col-med-1">Fr</th>
-                                <th class="col-med-1">Kitchen</th>
-                                <th class="col-med-1">Gar_type</th>
-                                <th class="col-med-1">Ac</th>
-                                <th class="col-med-1">Heat</th>
-                                <th class="col-med-1">contract_date</th>
-                                <th class="col-med-1">MLS_id</th>
-                                <th class="col-med-1">Address</th>
-                                <th class="col-med-1">Lat</th>
-                                <th class="col-med-1">Lng</th>
-                                <th class="col-med-1">Selling_price_predictions</th>
-                            </tr>
 
-                        </thead>
-                        <tbody>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          Home
+        </a>
 
-                        </tbody>
-                    </table>
-                    
-                    <div class='tableauPlaceholder' id='viz1644284388320' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Final_Project_Analysis&#47;WIP_Story' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644284388320');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      
-                </div>
-            </div>
-        </div>
-
+        <a href="https://public.tableau.com/app/profile/taimur.ahmad.khan/viz/Final_Project_Analysis/WIP_Story"
+          class="navbar-item">
+          Analysis for Sold Properties </a>
+      </div>
     </div>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script>
+  </nav>
+  <section class="section header mb-10">
+    <div class="">
+      <h1 class="title">
+        Real Estate Price Predictions
+      </h1>
+      <p class="subtitle">
+        Machine learning predicted selling price for listed <strong>Real Estate</strong>!
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="">
+      <div class="columns">
+        <div
+          class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd">
+          <div class="card">
+
+            <div class="card-content filter">
+              <p class="is-size-5 has-text-centered pb-4">Use Filter Search below to explore data</p>
+
+
+              <div class="content">
+                <div class="filter-form">
+                  <div class="field">
+                    <label class="label">Enter Contract Date</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="09/01/2022" id="contract_date">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Enter Municipality</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Toronto C07" id="municipality">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Enter Community</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Westminster-Branson" id="community">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Enter Type</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Detached" id="type">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Enter Style</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Bungalow" id="style">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Enter Bedrooms</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="4" id="br">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Enter Washrooms</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="3" id="wr">
+                    </div>
+                  </div>
+
+                  <div class="field is-grouped is-grouped-right">
+                    <div class="control">
+                      <button class="button is-primary" id="filter-btn">Filter Table</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column table-col">
+          <div class="card tablecard">
+            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="col-med-1">Address</th>
+                  <th class="col-med-1">List Price</th>
+                  <th class="col-med-1">Selling Price Predictions</th>
+                  <th class="col-med-1">Type</th>
+                  <th class="col-med-1">Style</th>
+                  <th class="col-med-1">Municipality</th>
+                  <th class="col-med-1">Community</th>
+                  <th class="col-med-1">Bedrooms</th>
+                  <th class="col-med-1">Extra Rooms</th>
+                  <th class="col-med-1">Washrooms</th>
+                  <th class="col-med-1">Family Rooms</th>
+                  <th class="col-med-1">Kitchen</th>
+                  <th class="col-med-1">Garage Type</th>
+                  <th class="col-med-1">Ac</th>
+                  <th class="col-med-1">Heat</th>
+                  <th class="col-med-1">Contract Date</th>
+                  <th class="col-med-1">MLS_id</th>
+                  <th class="col-med-1">Latitude</th>
+                  <th class="col-med-1">Longitude</th>
+                  
+                </tr>
+
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class='tableauPlaceholder' id='viz1644293058080'><object class='tableauViz'
+                style='display:none;width:100%'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Final_Project_Analysis_dashboard&#47;Active_Listings' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+                <param name='filter' value='publish=yes' />
+              </object></div>
+            <script
+              type='text/javascript'>var divElement = document.getElementById('viz1644293058080'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="./static/js/data.js"></script>
+  <script src="./static/js/app.js"></script>
 </body>
+
 </html>

@@ -1,54 +1,29 @@
-body {
-
-    color: white;
-
+.tableauPlaceholder {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  .jumbotron {
-    background-image: url("../images/Prediction.jpg");
-    background-size: 50% 125%;
-    text-align: center;
-  }
-
-h1 {
-    color: black;
-  font-weight: 900;
-  }
-
-  h3 {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
- table{
-      table-layout:fixed;
-      word-wrap: break-word;
-     
-  } 
-
-
-  th {
-  background-color: #2A3E2B;
-  color: white;
-} 
-
-
- table, th, td {
-  border: 1px solid #ddd;
-
+  .table-col {
+    overflow-x: auto;
+    height: 70vh;
  
-}
+  }
 
+  body {
+    background-color: rgb(195, 207, 214);
+  }
 
-table {
-    overflow:auto;
-height: 350px
-}
+  .header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position-y: 490px;
+    margin-bottom: 12px;
+  }
 
-
-3
-
-
-
-
-
+  .filter {
+    background-color: rgb(247, 247, 247);
+    
+  
+  }
