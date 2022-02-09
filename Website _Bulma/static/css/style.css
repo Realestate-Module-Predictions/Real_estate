@@ -1,0 +1,19 @@
+.tableauPlaceholder {
+    width: 100% !important;
+  }
+
+  .table-col {
+    overflow-x: auto;
+    height: 70vh;
+  }
+
+  body {
+    background-color: rgb(207, 217, 223);
+  }
+
+  .header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position-y: 550px;
+    margin-bottom: 12px;
+  }

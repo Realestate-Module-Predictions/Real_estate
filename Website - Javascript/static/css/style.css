@@ -35,9 +35,20 @@ h1 {
 
  table, th, td {
   border: 1px solid #ddd;
+
  
 }
 
- td{
-      word-wrap: break-word;
-  } 
+
+table {
+    overflow:auto;
+height: 350px
+}
+
+
+3
+
+
+
+
+
