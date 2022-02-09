@@ -249,8 +249,9 @@ https://realestate-module-predictions.github.io/Real_estate/
 
 Using JavaScript, HTML and CSS, a webpage was created which can be deployed through Github pages. The dashboard consists of an interactive table which can be filtered and an embedded Tableau story which shows visualisations of the Active Dataset. The image below is a screenshot of the page:
   
-<img width="1440" alt="Screenshot 2022-02-07 at 23 17 57" src="https://user-images.githubusercontent.com/87828174/152917336-226f5a2c-1663-4387-8def-7c3b50083c2b.png">
-<img width="1440" alt="Screenshot 2022-02-07 at 23 18 27" src="https://user-images.githubusercontent.com/87828174/152917394-d975516b-aec6-4e19-a167-1942852464d4.png">
+<img width="1440" alt="Screen Shot 2022-02-09 at 12 39 57 PM" src="https://user-images.githubusercontent.com/89032468/153258687-cbe68b44-ec7d-446d-96c2-44daec9d6502.png">
+<img width="1440" alt="Screen Shot 2022-02-09 at 12 40 11 PM" src="https://user-images.githubusercontent.com/89032468/153258828-c5c02a98-51c5-4259-9c70-e6c01c06b581.png">
+<img width="1440" alt="Screen Shot 2022-02-09 at 12 40 22 PM" src="https://user-images.githubusercontent.com/89032468/153258948-c83e7916-2efa-488f-a3f2-513135eab8c5.png">
 
 - The RealEstate button acts as a Home button. It refreshes the page and removes all filters when it is clicked
 - The Analysis for Sold Properties is a link to a Tableau story of analysis on the sold houses data
