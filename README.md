@@ -251,7 +251,7 @@ Using JavaScript, HTML and CSS, a webpage was created which can be deployed thro
 <img width="1440" alt="Screenshot 2022-02-07 at 23 17 57" src="https://user-images.githubusercontent.com/87828174/152917336-226f5a2c-1663-4387-8def-7c3b50083c2b.png">
 <img width="1440" alt="Screenshot 2022-02-07 at 23 18 27" src="https://user-images.githubusercontent.com/87828174/152917394-d975516b-aec6-4e19-a167-1942852464d4.png">
 
-- The RealEstate button refreshes the page and removes all filters
+- The RealEstate button acts as a Home button. It refreshes the page and removes all filters when it is clicked
 - The Analysis for Sold Properties is a link to a Tableau story of analysis on the sold houses data
 - The filter on the left allows you to filter the active listings table by date, municipality, community, type, style, Bedrooms and washrooms
 - Tableau story on active houses is embedded into the webpage
