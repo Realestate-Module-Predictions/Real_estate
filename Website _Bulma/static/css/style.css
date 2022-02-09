@@ -1,5 +1,8 @@
 .tableauPlaceholder {
     width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .table-col {
@@ -16,4 +19,9 @@
     background-size: cover;
     background-position-y: 550px;
     margin-bottom: 12px;
+  }
+
+  .bgc {
+    background-color: rgb(241, 241, 239);
+  
   }
