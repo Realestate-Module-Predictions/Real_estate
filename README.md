@@ -196,9 +196,9 @@ The sold price is the value we want to predict in active listings (unsold houses
 
 After data is seperated and scaled, we train the model on the training set and get accuracy scores from the model running on the testing set. The X-train features with y-train of training dataset is fitted to the linear regressor. The linear regressor then predicts on the testing X set. These predicted values are analysed along side the actual value of y. The predictions and y_test are selling prices.
 
-#### Explanation of model choice, including limitations and benefits
+#### Explanation of model choice, including Limitations, Benefits and Improvements
 
-As we want to make predictions on a continuous variables, classification models are not useful. We tried different regressor models. The Neural Network model yielded a lower accuracy score of 86%. Logistic regression did not work and Decision Trees would kill the kernel and now allow computation. For our continuous variable features and the type of predictions we wanted, the linear regression model worked the best. We trained the model on the training scaled data and predict on the X_test_scaled or the scaled test data. The errors are printed and we get a variance score of 97 %.
+As we want to make predictions on a continuous variables, classification models are not useful. We tried different regressor models. The Neural Network model yielded a lower accuracy score of 86%. Logistic regression did not work and Decision Trees would kill the kernel and now allow computation. For our continuous variable features and the type of predictions we wanted, the linear regression model worked the best. We trained the model on the training scaled data and predict on the X_test_scaled or the scaled test data. The errors are printed and we get a variance score of 97 %. An improvement to the model is to use weighted latitudes and longitudes with respect to a centralised point or calculate the distance of each vector point from this origin instead of pure numerical latitude and longitude numbers. This way the model will give more weight to the relative location of these houses instead of numerical values of its coordinates.
 
 <img width="789" alt="Screenshot 2022-01-27 at 17 53 45" src="https://user-images.githubusercontent.com/87828174/151456685-39c2a7f6-5c7b-498b-a354-609107cf2754.png">
 
